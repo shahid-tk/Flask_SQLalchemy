@@ -6,19 +6,30 @@ Install flask_SQLAlchemy on the virtual environment.
 
 After creating ``app.py`` file.
 
-Install sqlite3 
+## Create the Database
 
-```` # sudo apt install sqlite3 ````
+You’ll use the Flask shell to create your database.
+With your virtual environment activated, set the ``app.py`` file as your Flask application using the ``FLASK_APP`` environment variable.
 
-Open python shell on virtual environment
+```` # flask shell ````
 
-```` # python3 ````
-
-Import db table from flask file app.py
+Import database object db model.
 
 ```` # from app import db ````
 
-To create the table in the database and database file
+then run ``db.create.all()`` function to create the tables that are associated with your models.
 
 ```` # db.create.all()````
+
+Exit shell (ctrl+D)
+
+## Install sqlite3 
+
+```` # sudo apt install sqlite3 ````
+
+open ``database.db`` using sqlite3 shell
+
+```` # sqlite3 database.db ````
+
+Check the inserted tables usin `` .tables ``
 
