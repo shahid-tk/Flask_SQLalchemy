@@ -11,6 +11,10 @@ After creating ``app.py`` file.
 You’ll use the Flask shell to create your database.
 With your virtual environment activated, set the ``app.py`` file as your Flask application using the ``FLASK_APP`` environment variable.
 
+```` # export FLASK_APP=app ````
+
+To create database file, need to enter a python interactive shell , that runs commands in the context of Flask application.
+
 ```` # flask shell ````
 
 Import database object db model.
